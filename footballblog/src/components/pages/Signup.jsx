@@ -3,7 +3,7 @@ import {Signup as SignupComp} from '../index'
 
 function Signup() {
   return (
-    <div className='py-8'><SignupComp/></div>
+    <div ><SignupComp/></div>
   )
 }
 

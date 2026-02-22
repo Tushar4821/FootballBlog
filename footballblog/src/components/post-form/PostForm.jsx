@@ -34,7 +34,8 @@ function PostForm({ post }) {
         .trim()
         .toLowerCase()
         .replace(/[^a-zA-Z\d\s]+/g, "-")
-        .replace(/\s+/g, "-");
+        .replace(/\s+/g, "-")
+         .slice(0, 36);
     }
     return "";
   }, []);
@@ -198,7 +199,7 @@ function PostForm({ post }) {
                 "Champions League",
                 "Match Analysis",
                 "Transfer News",
-                "Opinion",
+                "Serie A",
               ].map((category) => (
                 <label key={category} className="cursor-pointer">
                   <input

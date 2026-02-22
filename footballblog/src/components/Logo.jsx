@@ -5,8 +5,8 @@ function Logo() {
   return (
     <img 
       src={logo3}
-      alt="Logo"
-      style={{ width: "250px", height: "70px", objectFit: "contain" }}
+      alt="PitchPulse Logo"
+      className="h-16 md:h-20 w-auto"
     />
   )
 }

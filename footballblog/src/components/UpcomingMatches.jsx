@@ -71,7 +71,8 @@ function UpcomingMatches() {
         No upcoming matches available.
       </p>
     ) : (
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="bg-[#1B233A] border border-[#2E3A5E] rounded-2xl p-6 max-h-125 overflow-y-auto custom-scrollbar">
+       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
         {matches.map((match) => {
           const isLive =
             match.status === "IN_PLAY" ||
@@ -157,6 +158,7 @@ function UpcomingMatches() {
             </div>
           );
         })}
+      </div>
       </div>
     )}
   </div>
